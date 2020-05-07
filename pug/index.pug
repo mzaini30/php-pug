@@ -1,17 +1,17 @@
 extends base.pug
 
 block base
-	h1 Bagian nama
-	+if('$nama != "Zen"')
-	p Namanya bukan Zen
-	+elif('$nama != "Andi"')
-	p Namanya bukan Andi
-	+else()
-	p Halo !{tulis("$nama")}
-	+endif()
+  h1 Bagian nama
+  +if('$nama != "Zen"')
+  p Namanya bukan Zen
+  +elif('$nama != "Andi"')
+  p Namanya bukan Andi
+  +else
+  p Halo !{tulis("$nama")}
+  +endif
 
-	h1 Buah-buah yang kubutuhkan adalah:
-	ol
-		+foreach('$data as $x')
-		li !{tulis("$x")}
-		+endforeach
+  h1 Buah-buah yang kubutuhkan adalah:
+  ol
+    +foreach('$data as $x')
+    li !{tulis("$x")}
+    +endforeach

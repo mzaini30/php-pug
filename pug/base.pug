@@ -1,17 +1,17 @@
 - tulis = (x) => `<?= htmlentities(${x} ?? '') ?>`
 
 mixin if(x)
-	| <?php if(!{x}): ?>
+  | <?php if(!{x}): ?>
 mixin elif(x)
-	| <?php else if(!{x}): ?>
+  | <?php else if(!{x}): ?>
 mixin else
-	| <?php else: ?>
+  | <?php else: ?>
 mixin endif 
-	| <?php endif ?>
+  | <?php endif ?>
 
 mixin foreach(x)
-	| <?php foreach(!{x}): ?>
+  | <?php foreach(!{x}): ?>
 mixin endforeach
-	| <?php endforeach ?>
+  | <?php endforeach ?>
 
 block base
